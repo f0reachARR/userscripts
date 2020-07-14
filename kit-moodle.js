@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         KIT Moodle utils
 // @namespace    https://f0reach.me
-// @version      0.1
+// @version      0.1.1
 // @description  KIT Moodle用の拡張です
 // @author       f0reachARR
 // @match        https://moodle.cis.kit.ac.jp/*
@@ -46,10 +46,10 @@
 
       section
         .querySelectorAll('div.left.side')
-        .forEach(({ remove }) => remove());
+        .forEach((elem) => elem.remove());
       section
         .querySelectorAll('div.right.side')
-        .forEach(({ remove }) => remove());
+        .forEach((elem) => elem.remove());
 
       const content = section.querySelector('.content');
 
