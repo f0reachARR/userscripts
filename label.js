@@ -65,6 +65,7 @@ function showLabelOnSidebarCourse() {
 
   const labels = getCourseLabelMap();
   for (const course of Object.keys(labels)) {
+    if (!labels[course]) continue;
     // マイコース ツリー, マイコース リスト
     cssTag.sheet.insertRule(
       `p.tree_item[data-node-type="20"][data-node-key="${course}"]::after,
