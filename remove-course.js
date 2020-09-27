@@ -62,7 +62,7 @@ function hideSidebarCourse() {
   document.head.appendChild(cssTag);
   for (const course of getHiddenCourse()) {
     cssTag.sheet.insertRule(
-      `p.tree_item[data-node-type="20"][data-node-key="${course}"] { display: none; }`,
+      `p.tree_item[data-node-type="20"][data-node-key="${course}"], .block_course_list a[href*="/course/view.php?id=${course}"] { display: none; }`,
     );
   }
 }
