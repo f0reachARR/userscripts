@@ -7,7 +7,3 @@
 // @match        https://moodle.cis.kit.ac.jp/*
 // @grant        none
 // ==/UserScript==
-
-require('./toggle');
-require('./remove-course');
-require('./label');
