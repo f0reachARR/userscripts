@@ -1,7 +1,7 @@
 {
   "name": "userscripts",
   "version": "1.0.0",
-  "main": "dist/index.js",
+  "browser": "dist/index.js",
   "repository": "https://github.com/f0reachARR/userscripts",
   "author": "f0reachARR <f0reach@f0reach.me>",
   "license": "MIT",
@@ -9,10 +9,15 @@
     "build": "parcel build ./index.js"
   },
   "targets": {
-    "main": {
+    "browser": {
       "minify": false,
-      "sourceMap": false
+      "sourceMap": false,
+      "context": "browser",
+      "includeNodeModules": true
     }
+  },
+  "engines": {
+    "browsers": "> 0.25%"
   },
   "devDependencies": {
     "parcel": "^2.0.0-beta.1"
