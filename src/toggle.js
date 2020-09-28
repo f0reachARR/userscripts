@@ -1,4 +1,4 @@
-const CRC32 = require('crc-32');
+import * as CRC32 from 'crc-32';
 
 function uniq(array) {
   const uniquedArray = [];

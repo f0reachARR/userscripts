@@ -1,3 +1,3 @@
-require('./toggle');
-require('./remove-course');
-require('./label');
+import './toggle';
+import './remove-course';
+import './label';
